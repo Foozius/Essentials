@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: DAGV1200_LabandChallenge03_V001.ma
-//Last modified: Thu, Sep 17, 2026 02:02:54 PM
+//Last modified: Thu, Sep 17, 2026 02:16:22 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -11,19 +11,19 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "FF41EB2A-4A55-BBB1-521B-95800271D800";
+fileInfo "UUID" "9A98CB0B-4304-4B6F-C49C-E8BBF5F805B8";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "1E752F07-4584-3087-2AEF-E1867E0CF066";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 44.722764580879506 19.027945018679663 -2.5003907251266355 ;
-	setAttr ".r" -type "double3" -19.19999999999779 93.199999999993281 2.5444437451708134e-14 ;
+	setAttr ".t" -type "double3" 22.801732993539396 15.637312755772191 9.2124981238917911 ;
+	setAttr ".r" -type "double3" -26.399999999971694 67.999999999991985 0 ;
 	setAttr ".rpt" -type "double3" 1.4895535343524825e-15 2.4162918720248585e-15 -4.0001650395288424e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2A926F63-4E61-5164-DCA6-A3B746F0F799";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 47.43088479283302;
+	setAttr ".coi" 27.455775751132244;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
