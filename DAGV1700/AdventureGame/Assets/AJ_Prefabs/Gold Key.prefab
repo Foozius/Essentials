@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1229879162043075739}
   - component: {fileID: 2408824254248389077}
   - component: {fileID: 728886681636473887}
+  - component: {fileID: 8183724738809993838}
   m_Layer: 8
   m_Name: Gold Key
   m_TagString: Untagged
@@ -141,3 +142,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleIDBehaviour
   id: {fileID: 11400000, guid: e0efbb70812c377458e4de3d1b8171a0, type: 2}
+--- !u!95 &8183724738809993838
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3409375686827632278}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 94031ba55e0737743b39c6a43a3a5a74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
