@@ -5102,6 +5102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1192725914}
   - component: {fileID: 1192725915}
+  - component: {fileID: 1192725916}
   m_Layer: 13
   m_Name: Biome Music Trigger
   m_TagString: Untagged
@@ -5145,6 +5146,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 14.68, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1192725916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192725913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleTriggerEventBehaviour
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 24100000, guid: 825437107ae89af47a9ec882231ccb91, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1211034341
 PrefabInstance:
   m_ObjectHideFlags: 0
