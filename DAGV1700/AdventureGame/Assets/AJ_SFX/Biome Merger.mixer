@@ -9,8 +9,45 @@ AudioMixerSnapshotController:
   m_Name: Thwomp Death Pit
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 59d53d4c1af4b61489c8ccd41062fd2c
-  m_FloatValues: {}
+  m_FloatValues:
+    56a75d921a653a44abac29556f11a1cd: 0.28
+    dd8a2f453023cbc4f88b7f053affcbf6: -19.928473
+    7580d3fda7e4a894f8f96ccb342ebc49: 0.3945695
+    a0a3076ea37b1a84e931ec292a698a1d: -80
   m_TransitionOverrides: {}
+--- !u!243 &-3033227966757639375
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Music
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 5d7a00334be90d640b13b47fa8855913
+  m_Children: []
+  m_Volume: a0a3076ea37b1a84e931ec292a698a1d
+  m_Pitch: 669940a5ee5d5d04ab7da0926627a68b
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 3801845918048935821}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-2859427820406411963
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 0a21d210f99fed4429f92d555f106cb5
+  m_EffectName: Attenuation
+  m_MixLevel: 2da5e0932aae22843b80fea02829b320
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -22,8 +59,9 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
+  - {fileID: 2802761935712350438}
   - {fileID: -3998001152444386817}
-  m_StartSnapshot: {fileID: 24500006}
+  m_StartSnapshot: {fileID: 2802761935712350438}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
@@ -31,9 +69,11 @@ AudioMixerController:
   m_AudioMixerGroupViews:
   - guids:
     - f4b0b511117edda4bbcfbd0d47050d77
+    - 5d7a00334be90d640b13b47fa8855913
+    - 0db300844c1c71e4d8b36514d0e298d4
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500006}
+  m_TargetSnapshot: {fileID: 2802761935712350438}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -43,7 +83,9 @@ AudioMixerGroupController:
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: f4b0b511117edda4bbcfbd0d47050d77
-  m_Children: []
+  m_Children:
+  - {fileID: -3033227966757639375}
+  - {fileID: 8110727331557175286}
   m_Volume: 7580d3fda7e4a894f8f96ccb342ebc49
   m_Pitch: 122d711528e7d80448a1730722785414
   m_Send: 00000000000000000000000000000000
@@ -73,9 +115,58 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Starting Area
+  m_Name: Masta
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 0049cdee25ec6a641b0a56a002820002
   m_FloatValues:
-    7580d3fda7e4a894f8f96ccb342ebc49: 0.27000841
+    dd8a2f453023cbc4f88b7f053affcbf6: -80
+    7580d3fda7e4a894f8f96ccb342ebc49: -80
+    a0a3076ea37b1a84e931ec292a698a1d: -80
   m_TransitionOverrides: {}
+--- !u!245 &2802761935712350438
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Starting Area
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: b3e772217d99dec4f8121c76dc0b4a2e
+  m_FloatValues:
+    dd8a2f453023cbc4f88b7f053affcbf6: -80
+    7580d3fda7e4a894f8f96ccb342ebc49: -0.27209902
+    a0a3076ea37b1a84e931ec292a698a1d: -19.928473
+  m_TransitionOverrides: {}
+--- !u!244 &3801845918048935821
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 368ed10f0d21e1245b7fdb9c79062b2c
+  m_EffectName: Attenuation
+  m_MixLevel: aa3ec8573287f2140a0b729571946a9c
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &8110727331557175286
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Thwomp Music
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 0db300844c1c71e4d8b36514d0e298d4
+  m_Children: []
+  m_Volume: dd8a2f453023cbc4f88b7f053affcbf6
+  m_Pitch: 56a75d921a653a44abac29556f11a1cd
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2859427820406411963}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
